@@ -9,15 +9,7 @@
 				<textarea name="message[message]"></textarea>
 				<input type="submit" />
 
-				<div id="board" class="offset-by-two">
-				<% if @messages %>
-					<% @messages.each do |post| %>
-						<div><h4 class="info">Name: <%= post.name %></h4>
-							<h4 class="info">Message: <%= post.message %></h4>
-						</div>
-					<% end %>
-				<% end %>
-				</div>
+				
 				<h4>&nbsp;</h4>
 				<a href="/wedding/thank-you"><h4 class="party">Home</h4></a>
 			</td>

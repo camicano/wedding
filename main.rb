@@ -55,13 +55,13 @@ get '/wedding/thank-you' do
 end
 
 get '/wedding/board' do
-  @messages = Message.all
+  # @messages = Message.all
   erb :board
 end
 
 post '/wedding/board' do
-  message = Message.new(params[:message])
-  message.save
+  # message = Message.new(params[:message])
+  # message.save
 
   redirect '/wedding/board'
 end
