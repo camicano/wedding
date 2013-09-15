@@ -1,0 +1,18 @@
+<div>
+	<table>
+		<tr>
+			<td>
+				<form method='post' action='/wedding/en/<%= @guest.id %>'>
+					<label>RSVP</label>
+					<select>
+						<option value="yes">Yes</option>
+						<option value="no">No</option>
+					</select>
+					<label>How Many People</label>
+					<input name="num_ppl" value="<%= @guest.num_ppl %>" />
+				</form>
+			</td>
+		</tr>
+	</table>
+</div>
+  
