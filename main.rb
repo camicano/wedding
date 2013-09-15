@@ -4,8 +4,6 @@ require 'active_record'
 require 'active_support/all'
 require 'digest/sha2'
 
-enable :sessions
-
 require_relative './models/person'
 require_relative './models/message'
 
