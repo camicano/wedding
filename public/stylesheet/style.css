@@ -1,3 +1,4 @@
+/* layout css*/
 #body {
 	background-color: #934184;
 }
@@ -10,21 +11,115 @@
 	padding: 20px;
 	width: 650px;
 	height: auto;
-	font-family: 'Mouse Memoirs', sans-serif;
 }
 
 .h1 {
 	font-size: 55px;]
 	line-height: 1.6;
 	padding-bottom: 20px;
+	font-family: 'Mouse Memoirs', sans-serif;
 }
 
 .h2 {
 	font-size: 42px;
 	padding-bottom: 20px; 
+	font-family: 'Mouse Memoirs', sans-serif;
 }
 
-img {
+#logo {
 	width: 250px;
 	height: auto;
 }
+
+.img {
+	padding: 15px;
+	width: 400px;
+}
+/* main content */
+
+.mainform {
+	background-color: #b97aae;
+	border-radius: 10px;
+	padding: 20px;
+	width: 440px;
+	height: auto;
+}
+
+.main {
+	background-color: #b97aae;
+	border-radius: 10px;
+	padding: 20px;
+	width: 650px;
+	height: auto;
+}
+
+.div {
+	margin: 20px;
+}
+
+.h3 {
+	font-size: 35px;
+	padding-bottom: 20px;
+	text-align: center; 
+	font-family: 'Mouse Memoirs', sans-serif;
+}
+
+.h4 {
+	color:#934184;
+	text-align: center;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+.h4:hover {
+	color: #934184;
+}
+
+.label {
+	padding-top: 10px;
+	color: #333;
+}
+
+.info {
+	padding-left: 20px;
+	padding-bottom: 15px;
+	font-size: 20px;
+	color: #333;	
+}
+
+.text {
+	padding-left: 20px;
+	padding-bottom: 5px;
+	font-size: 20px;
+	color: #333;	
+}
+
+.party {
+	text-align: center;
+	padding-top: 20px;
+	font-size: 28px;
+	color: #222;
+	font-weight: bold;	
+}
+
+.icon {
+	color:#934184;
+	width: 100px;
+	height: auto;
+}
+
+.td {
+	padding: 30px;
+}
+
+#board {
+	background-color: #FFF;
+	border-radius: 10px;
+	padding: 30px;
+	width: 500px;
+	height: auto;
+	margin: 40px;
+}
+
+
+
+

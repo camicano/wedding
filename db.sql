@@ -17,4 +17,11 @@ CREATE TABLE invitations (
 	english boolean
 );
 
-id, name, num_ppl, email (pre-made)
+CREATE TABLE messages (
+	id serial primary key,
+	name varchar(100),
+	message varchar(500)
+);
+
+
+id, name, num_ppl, email, english? (pre-made)
