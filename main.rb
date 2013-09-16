@@ -1,11 +1,11 @@
 require 'sinatra'
-require 'sinatra/reloader'
-require 'active_record'
-require 'active_support/all'
-require 'digest/sha2'
+# require 'sinatra/reloader'
+# require 'active_record'
+# require 'active_support/all'
+# require 'digest/sha2'
 
-require_relative './models/person'
-require_relative './models/message'
+# require_relative './models/person'
+# require_relative './models/message'
 
 # ActiveRecord::Base.establish_connection(ENV['HEROKU_POSTGRESQL_ROSE_URL'] || 'postgres://localhost/wedding')
 
