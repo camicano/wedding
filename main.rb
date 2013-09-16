@@ -7,9 +7,9 @@ require 'digest/sha2'
 require_relative './models/person'
 require_relative './models/message'
 
-ActiveRecord::Base.establish_connection(ENV['HEROKU_POSTGRESQL_ROSE_URL'] || 'postgres://localhost/wedding')
+# ActiveRecord::Base.establish_connection(ENV['HEROKU_POSTGRESQL_ROSE_URL'] || 'postgres://localhost/wedding')
 
-ActiveRecord::Base.logger = Logger.new(STDOUT)
+# ActiveRecord::Base.logger = Logger.new(STDOUT)
 
 # before '/wedding*' do
 #   if !current_user
