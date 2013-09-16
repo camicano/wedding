@@ -2,28 +2,31 @@
 	<table>
 		<tr>
 			<td class="mainform">
-				<h2 class="h3">RSVP To The Party</h2>
+				<h2 class="h3">Vas a asistir la fiesta? RSVP To The Party</h2>
 				<form method='post' action='/wedding/en'>
-					<label class="label">RSVP</label>
+					<label class="label">RSVP *</label>
 					<select>
-						<option value="yes">Yes</option>
+						<option value="yes">Si/Yes</option>
 						<option value="no">No</option>
 					</select>
-					<label class="label">How Many People *</label>
+					<label class="label">Cuantos vienen? How Many People? *</label>
 						<input name="num_ppl" value="" />
-					<label class="label">Need housing?</label>
-						<input type="checkbox" name="thu">Thursday
-						<input type="checkbox" name="fri">Friday
-						<input type="checkbox" name="sat">Saturday
-					<label class="label">Do you require transportation?</label>
+					<label class="label">Que dias necesitan donde dormir? Need housing?</label>
+						<input type="checkbox" name="thu">Jueves/Thursday
+						<input type="checkbox" name="fri">Viernes/Friday
+						<input type="checkbox" name="sat">Sabado/Saturday
+					<label class="label">Necesita que lo recojan? Do you require transportation?</label>
 						<input name="tranportation" value="" />
-					<label class="label">Arrival time?</label>
+					<label class="label">A que hora llegada, lugar donde recojerlo y por que tipo de transporte llega. Arrival time, flight number?</label>
 						<input name="tranportation" value="" />
-					<label class="label">Departure time?</label>
+					<label class="label">A que hora se va, por donde y en que tipo de transporte? Departure time, and flight info?</label>
 						<input name="tranportation" value="" />
-					<label class="label">Any special needs?</label>
+					<label class="label">Algun tipo de requerimiento especial? Any special needs?</label>
 					<textarea name="special_needs"> </textarea>
+					<input type="submit" value="Mandar/Send" />
 				</form>
+				<h4>&nbsp;</h4>
+				<a href="/wedding/home"><h4 class="party">Home</h4></a>
 			</td>
 		</tr>
 	</table>

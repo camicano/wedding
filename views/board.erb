@@ -2,16 +2,23 @@
 	<table>
 		<tr>
 			<td class="main">
-				<form method="post" action="/wedding/board" 
+				<form class=" offset-by-three" method="post" action="/wedding/board"> 
 				<label class="label">Name</label>
 				<input type="text" name="message[name]" />
 				<label class="label">Message</label>
 				<textarea name="message[message]"></textarea>
 				<input type="submit" />
-
-				
+				</form>
+				<div id="board" class="offset-by-two">
+				<% if @messages %>
+					<% @messages.each do |post| %>
+						<div class="message"><h4 class="info board2"><span class="board"> <%= post.name %></span>: <%= post.message %></h4>
+						</div>
+					<% end %>
+				<% end %>
+				</div>
 				<h4>&nbsp;</h4>
-				<a href="/wedding/thank-you"><h4 class="party">Home</h4></a>
+				<a href="/wedding/home"><h4 class="party">Home</h4></a>
 			</td>
 		</tr>
 	</table>

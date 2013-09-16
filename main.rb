@@ -1,15 +1,15 @@
 require 'sinatra'
-# require 'sinatra/reloader'
-# require 'active_record'
-# require 'active_support/all'
-# require 'digest/sha2'
+require 'sinatra/reloader'
+require 'active_record'
+require 'active_support/all'
+require 'digest/sha2'
 
-# require_relative './models/person'
-# require_relative './models/message'
+require_relative './models/person'
+require_relative './models/message'
 
-# ActiveRecord::Base.establish_connection(ENV['HEROKU_POSTGRESQL_ROSE_URL'] || 'postgres://localhost/wedding')
+ActiveRecord::Base.establish_connection(ENV['HEROKU_POSTGRESQL_ROSE_URL'] || 'postgres://localhost/wedding')
 
-# ActiveRecord::Base.logger = Logger.new(STDOUT)
+ActiveRecord::Base.logger = Logger.new(STDOUT)
 
 # before '/wedding*' do
 #   if !current_user
@@ -35,33 +35,21 @@ require 'sinatra'
 #  redirect '/wedding'
 # end
 
-# home page with form in english
-get '/wedding/en' do
-  erb :form
-end
-
-# post the form
-post '/wedding/en' do
-  # @guest = Person.find(params[:id])
-
-  redirect '/wedding/thank-you'
-  erb :form
-end
 
 # Thank you page (that becomes main page once the person rsvps) has a link to -> message board, 
 # -> contact, map, other relevant info, wedding party. -> gift registry? -> edit form.
-get '/wedding/thank-you' do
+get '/wedding/home' do
   erb :home
 end
 
 get '/wedding/board' do
-  # @messages = Message.all
+  @messages = Message.all
   erb :board
 end
 
 post '/wedding/board' do
-  # message = Message.new(params[:message])
-  # message.save
+  message = Message.new(params[:message])
+  message.save
 
   redirect '/wedding/board'
 end
@@ -74,8 +62,8 @@ get '/wedding/registry' do
   erb :registry
 end
 
-get '/wedding/edit' do
-  erb :edit
+get '/wedding/rsvp' do
+  erb :form
 end
 
 # hidden link that shows the tables with all the info.
