@@ -26,13 +26,22 @@
 	font-family: 'Mouse Memoirs', sans-serif;
 }
 
+.date {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 5px; 
+	font-size: 22px;
+	font-family: 'Mouse Memoirs', sans-serif;
+}
+
 #logo {
 	width: 250px;
 	height: auto;
 }
 
 .img {
-	margin: 20px 0px 20px 0px;
+	padding-left: 50px;
+	width: 100px;
 }
 /* main content */
 
@@ -135,7 +144,18 @@
 	color: #333;	
 }
 
+#table {
+border: 2px;
+}
 
+th {
+	width: 250px;
+	margin: 10px;
+}
+
+td {
+	text-align: center;
+}
 
 
 

@@ -2,26 +2,30 @@
 	<div class="main eleven columns div">
 		<div class="form">
 		<h2 class="h3">Vas a asistir la fiesta? RSVP To The Party!</h2>
-		<form method='post' action='/wedding/en'>
+		<form method='post' action='/wedding/rsvp'>
+			<label class="label">Nombre/Name</label>
+			<input type="text" name="name" />
+			<label class="label">Email</label>
+			<input type="text" name="email" />
 			<label class="label">RSVP *</label>
-			<select>
+			<select name="rsvp">
 				<option value="yes">Si/Yes</option>
 				<option value="no">No</option>
 			</select>
 			<label class="label">Cuantos vienen? How Many People? *</label>
-			<input name="num_ppl" value="" />
+			<input type="text" name="num_ppl" />
 			<label class="label">Que dias necesitan donde dormir? Need housing?</label>
 			<input type="checkbox" name="thu">Jueves/Thursday
 			<input type="checkbox" name="fri">Viernes/Friday
 			<input type="checkbox" name="sat">Sabado/Saturday
 			<label class="label">Necesita que lo recojan? Do you require transportation?</label>
-			<input name="tranportation" value="" />
+			<input name="tranportation" />
 			<label class="label">A que hora llegada, lugar donde recojerlo y por que tipo de transporte llega. Arrival time, flight number?</label>
-			<input name="tranportation" value="" />
+			<input name="arrival"/>
 			<label class="label">A que hora se va, por donde y en que tipo de transporte? Departure time, and flight info?</label>
-			<input name="tranportation" value="" />
+			<input name="departure" />
 			<label class="label">Algun tipo de requerimiento especial? Any special needs?</label>
-			<textarea name="special_needs"> </textarea>
+			<textarea name="special_needs"></textarea>
 			<input type="submit" value="Mandar/Send" />
 		</form>
 		<a href="/wedding/home"><h4 class="h3">Home</h4></a>

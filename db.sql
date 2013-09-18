@@ -2,10 +2,11 @@ db.sql
 
 CREATE DATABASE wedding;
 
-CREATE TABLE invitations (
+CREATE TABLE people (
 	id serial primary key,
 	name varchar(255) NOT NULL,
-	num_ppl int NOT NULL,
+	num_ppl int, 
+	rsvp varchar(3),
 	house_thu boolean,
 	house_fr boolean,
 	house_sat boolean,
