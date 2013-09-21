@@ -49,7 +49,7 @@ post '/wedding/rsvp' do
   sat = params[:sat]
   arrival = params[:arrival]
   departure = params[:departure]
-  transportation = params[:transportation]
+  tranportation = params[:tranportation]
   special_needs = params[:special_needs]
 
   person = Person.new
@@ -60,7 +60,7 @@ post '/wedding/rsvp' do
   person.house_thu = thu
   person.house_fr = fri
   person.house_sat = sat
-  person.transportation = transportation
+  person.transportation = tranportation
   person.arrival = arrival
   person.departure = departure
   person.special_needs = special_needs
@@ -70,7 +70,7 @@ post '/wedding/rsvp' do
   erb :form
 end
 
-get '/wedding/thanks' do
+get '/wedding/thank' do
   erb :thanks
 end
 
