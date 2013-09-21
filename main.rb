@@ -1,15 +1,11 @@
 require 'sinatra'
-require 'sinatra/reloader'
 require 'active_record'
-require 'active_support/all'
-require 'digest/sha2'
 
 require_relative './models/person'
 require_relative './models/message'
 
-ActiveRecord::Base.establish_connection(ENV['HEROKU_POSTGRESQL_TEAL_URL'] || 'postgres://localhost/wedding')
+ActiveRecord::Base.establish_connection(ENV['HEROKU_POSTGRESQL_BROWN_URL'] || 'postgres://localhost/wedding')
 
-ActiveRecord::Base.logger = Logger.new(STDOUT)
 
 # before '/wedding*' do
 #   if !current_user
