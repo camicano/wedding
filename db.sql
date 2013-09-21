@@ -7,15 +7,14 @@ CREATE TABLE people (
 	name varchar(255) NOT NULL,
 	num_ppl int, 
 	rsvp varchar(3),
-	house_thu boolean,
-	house_fr boolean,
-	house_sat boolean,
+	house_thu varchar(3),
+	house_fr varchar(3),
+	house_sat varchar(3),
 	transportation varchar(100),
 	arrival varchar(50),
 	departure varchar(50),
 	special_needs varchar(255),
 	email varchar(100),
-	english boolean
 );
 
 CREATE TABLE messages (

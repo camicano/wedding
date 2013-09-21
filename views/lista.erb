@@ -1,10 +1,9 @@
 <div>
-	<div class="main">
-		<h2 class="h3">Datos</h2>
-			<table id="table">
-				<thead>
+	<div class="main2">
+			<table>
 					<tr>
 						<th>Nombre</th>
+						<th>RSVP</th>
 						<th>Invitados</th>
 						<th>Estadia Jueves</th>	
 						<th>Estadia Viernes</th>	
@@ -15,11 +14,10 @@
 						<th>Notas</th>
 						<th>Email</th>			
 					</tr>
-				</thead>
-				<tbody>
 					<% @rsvps.each do |rsvp| %>
 						<tr>
 							<td><%= rsvp.name %></td>
+							<td><%= rsvp.rsvp %></td>
 							<td><%= rsvp.num_ppl %></td>
 							<td><%= rsvp.house_thu %></td>
 							<td><%= rsvp.house_fr %></td>
@@ -31,10 +29,8 @@
 							<td><%= rsvp.email %></td>
 						</tr>
 					<% end %>
-				</tbody>
 			</table>
 			<br class="clear">
-		<a href="/wedding/nuevo"><h4 class="date">Agregar</h4></a>
 		<a href="/wedding/home"><h4 class="date">Home</h4></a>
 
 	</div>
