@@ -70,7 +70,7 @@ post '/wedding/rsvp' do
   erb :form
 end
 
-get '/wedding/thank' do
+get '/wedding/thanks' do
   erb :thanks
 end
 
