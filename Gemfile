@@ -6,3 +6,4 @@ gem 'sinatra-reloader'
 gem 'pg'
 gem 'activerecord', '~> 3.2.13'
 gem 'tux'
+
