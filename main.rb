@@ -38,10 +38,10 @@ post '/wedding/rsvp' do
   name = params[:name]
   email = params[:email]
   if params[:rsvp] == "yes"
-     rsvp = "yes"
-   else 
-     rsvp = "no"
-    end  
+    rsvp = "yes"
+  else 
+    rsvp = "no"
+  end  
 
   num_ppl = params[:num_ppl]
   thu = params[:thu]
