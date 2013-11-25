@@ -168,6 +168,12 @@ td {
 	border: 1px solid black;
 }
 
+#code {
+	padding-left: 20%;
+	padding-bottom: 5%;
+	width: 60%;
+	height: auto;
+}
 
 
 
